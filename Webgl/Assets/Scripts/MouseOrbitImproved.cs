@@ -139,18 +139,18 @@ public class MouseOrbitImproved : MonoBehaviour {
 
 				}
 			}
-			else
-			{
-				if (Input.GetMouseButton(0))
-				{
-					x += Input.GetAxis("Mouse X") * xSpeed * Time.deltaTime;
-					y -= Input.GetAxis("Mouse Y") * ySpeed * Time.deltaTime;
+			//else
+			//{
+			//	if (Input.GetMouseButton(0))
+			//	{
+			//		x += Input.GetAxis("Mouse X") * xSpeed * Time.deltaTime;
+			//		y -= Input.GetAxis("Mouse Y") * ySpeed * Time.deltaTime;
 
-					y = ClampAngle(y, yMinLimit, yMaxLimit);
-				}
-				else
-					x += Time.deltaTime;
-			}
+			//		y = ClampAngle(y, yMinLimit, yMaxLimit);
+			//	}
+			//	else
+			//		x += Time.deltaTime;
+			//}
 			
 			
 
